@@ -1,0 +1,43 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    # Node version
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    # Install Node modules
+    - run: npm ci
+
+    # Run unit tests
+    - run: npm test
+      env:
+        CI: true
+
+    # Run build
+    - run: npm run build
+
+    # List artifact files
+    - name: List output files
+      run: ls dist -ltr
+
+    # Upload files to server
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: ${{ secrets.ftp_url }}
+        ftp-username: ${{ secrets.ftp_username }}
+        ftp-password: ${{ secrets.ftp_password }}
+        local-dir: dist
