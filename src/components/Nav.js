@@ -12,6 +12,7 @@ const NavContainer = styled.nav`
 	padding: 1rem 1rem 0 1rem;
 	width: 260px;
 	text-align: center;
+	overflow-y: auto;
 
 	img {
 		display: inline-block;
