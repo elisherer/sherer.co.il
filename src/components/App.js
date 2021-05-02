@@ -3,14 +3,18 @@ import GlobalStyle from "./App.GlobalStyle";
 import Nav from "./Nav";
 import Main from "./Main";
 import useScrollNavigation from "../hooks/useScrollNavigation";
+import useToggle from "../hooks/useToggle";
+import MenuToggle from "./MenuToggle";
 
 const App = () => {
 	const [active, handleScroll, onLinkClick] = useScrollNavigation("about");
+	const [open, toggleOpen] = useToggle();
 
 	return (
 		<>
 			<GlobalStyle />
-			<Nav active={active} onLinkClick={onLinkClick} />
+			<MenuToggle open={open} toggleOpen={toggleOpen} />
+			<Nav active={active} onLinkClick={onLinkClick} open={open} />
 			<Main onScroll={handleScroll} />
 		</>
 	);

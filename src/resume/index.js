@@ -1,5 +1,5 @@
 import Photo from "./photo.jpg";
-import Maze4U from "./maze4u.png";
+import Kidev from "./kidev.png";
 import Devek from "./devek.png";
 import TinyTalk from "./tinytalk.png";
 import GamingCast from "./gamingcast.png";
@@ -46,20 +46,20 @@ const resume = {
 	],
 	projects: [
 		{
-			title: "Maze4U - Create a maze for you!",
-			thumbnail: Maze4U,
-			thumbnailAlt: "Maze4U screenshot",
+			title: "kidev.io - Kids develop!",
+			thumbnail: Kidev,
+			thumbnailAlt: "kidev screenshot",
 			summary:
 				"Print fun mazes in all kinds of styles (predefined shapes or create your own). " +
 				"Also Free paint, Sudoku and Word searches.",
 			moreSummary:
 				"You can easily create worksheets using the &quot;Saved work&quot;" +
-				"tool. It will bundle all the mazes with the drawings and stamps you" +
+				"tool. It will bundle all the worksheets with the drawings and stamps you" +
 				"put on it, several in each page. There is also an option to draw" +
 				"freely in the site and create &quot;connect the dots&quot; worksheets." +
 				"<br />" +
 				"<b>No Ads. No in-app purchases.</b>",
-			links: [{ href: "https://maze4u.com", label: "maze4u.com" }]
+			links: [{ href: "https://kidev.io", label: "kidev.io" }]
 		},
 		{
 			title: "Devek - Developer Kit",

@@ -9,16 +9,20 @@ const NavContainer = styled.nav`
 	position: relative;
 	color: var(--nav-fg-color);
 	background-color: var(--nav-bg-color);
-	padding: 1rem 1rem 0 1rem;
-	width: 260px;
+	width: 0;
 	text-align: center;
 	overflow-y: auto;
+	transition: width 0.5s ease-in-out;
+
+	&[data-open] {
+		width: 260px;
+	}
 
 	img {
 		display: inline-block;
 		background-color: #bebebe;
 		border-radius: 50%;
-		margin: 1rem;
+		margin-top: 2rem;
 	}
 	h1 {
 		font-size: 2.2rem;
@@ -40,6 +44,10 @@ const NavContainer = styled.nav`
 
 	@media print {
 		display: none;
+	}
+
+	@media only screen and (min-width: 768px) {
+		width: 260px;
 	}
 `;
 
@@ -69,7 +77,7 @@ const NavLinkContainer = styled.li`
 
 const NavLinks = styled.ul`
 	text-align: left;
-	padding: 0.5rem;
+	padding: 0.5rem 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.2);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 `;
@@ -96,14 +104,16 @@ const NavLink = ({
 
 const Nav = ({
 	active,
-	onLinkClick
+	onLinkClick,
+	open
 }: {
 	active: string,
-	onLinkClick: Function
+	onLinkClick: Function,
+	open: boolean
 }) => {
 	const resume = useResume();
 	return (
-		<NavContainer>
+		<NavContainer data-open={open || undefined}>
 			<ThemeSwitch />
 			<img alt={resume.name} src={resume.avatar} width="160px" height="160px" />
 			<h1>{resume.name}</h1>
