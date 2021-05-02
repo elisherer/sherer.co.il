@@ -20,7 +20,13 @@ const MenuToggleContainer = styled.button`
 	}
 `;
 
-const MenuToggle = ({ open, toggleOpen }) => {
+const MenuToggle = ({
+	open,
+	toggleOpen
+}: {
+	open: boolean,
+	toggleOpen: Function
+}) => {
 	return (
 		<MenuToggleContainer data-open={open || undefined} onClick={toggleOpen}>
 			☰
