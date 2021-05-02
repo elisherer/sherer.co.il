@@ -3,6 +3,7 @@ import Kidev from "./kidev.png";
 import Devek from "./devek.png";
 import TinyTalk from "./tinytalk.png";
 import GamingCast from "./gamingcast.png";
+import NickNack from "./nicknack.png";
 import Payoneer from "./payoneer-logo.png";
 import TDN from "./tdn-logo.png";
 import Technion from "./technion.jpg";
@@ -106,7 +107,17 @@ const resume = {
 	],
 	experience: [
 		{
+			start: 2021,
+			company: "NickNack",
+			logo: NickNack,
+			location: "Israel",
+			title: "Chief Architect",
+			description:
+				"In charge of the architectural design of the application and system. Invloved in the initial development process."
+		},
+		{
 			start: 2016,
+			end: 2021,
 			company: "Payoneer",
 			logo: Payoneer,
 			location: "Petah Tikva, Israel",
