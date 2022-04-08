@@ -4,6 +4,7 @@ import Devek from "./devek.png";
 import TinyTalk from "./tinytalk.png";
 import GamingCast from "./gamingcast.png";
 import NickNack from "./nicknack.png";
+import PapayaGlobal from "./papayaglobal.png";
 import Payoneer from "./payoneer-logo.png";
 import TDN from "./tdn-logo.png";
 import Technion from "./technion.jpg";
@@ -22,6 +23,7 @@ const resume = {
 	twitter: "https://twitter.com/elisherer",
 	linkedin: "https://www.linkedin.com/in/eli-sherer/",
 	npm: "https://www.npmjs.com/~elisherer",
+  medium: "https://medium.com/@elisherer",
 	email: `mailto:eli.${(1722295107).toString(36)}${AT}gmail.com`,
 	avatar:
 		"https://www.gravatar.com/avatar/8e308e281247157b097e1578a48755e9?s=160&d=mp",
@@ -106,8 +108,18 @@ const resume = {
 		}
 	],
 	experience: [
+    {
+      start: 2021,
+      company: "Papaya Global",
+      logo: PapayaGlobal,
+      location: "Israel",
+      title: "Architect, Payments",
+      description:
+        "In charge of the architectural design of the payments platform. Invloved in the initial development process."
+    },
 		{
 			start: 2021,
+      end: 2021,
 			company: "NickNack",
 			logo: NickNack,
 			location: "Israel",
@@ -189,7 +201,7 @@ const resume = {
 			]
 		}
 	],
-	languages: ["🇺🇸 English", "🇮🇱 עברית"],
+	languages: ["en-US", "he-IL"],
 	more: [
 		"Highly motivated",
 		"Team player",

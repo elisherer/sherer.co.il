@@ -4,6 +4,12 @@ import QuickLinks from "./QuickLinks";
 import useResume from "../hooks/useResume";
 import ThemeSwitch from "./ThemeSwitch";
 import { MapLocation } from "../assets/icons";
+import getFlagEmoji from "../util/getFlagEmoji";
+
+const Languages = {
+  "he": "עברית",
+  "en": "English"
+}
 
 const NavContainer = styled.nav`
 	position: relative;
@@ -176,7 +182,7 @@ const Nav = ({
 			<h2>Languages</h2>
 			<ul className="languages">
 				{resume.languages.map(lang => (
-					<li key={lang}>{lang}</li>
+					<li key={lang}>{getFlagEmoji(lang.slice(-2))}&nbsp;&nbsp;&nbsp;{Languages[lang.substring(0, 2)]}</li>
 				))}
 			</ul>
 		</NavContainer>
