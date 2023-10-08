@@ -113,7 +113,7 @@ const resume: Resume = {
       location: "Israel",
       title: "Architect, Payments",
       description:
-        "In charge of the architectural design of the payments platform. Invloved in the initial development process.",
+        "In charge of the architectural design of the payments platform. Involved in the initial development process.",
     },
     {
       start: 2021,
@@ -123,7 +123,7 @@ const resume: Resume = {
       location: "Israel",
       title: "Chief Architect",
       description:
-        "In charge of the architectural design of the application and system. Invloved in the initial development process.",
+        "In charge of the architectural design of the application and system. Involved in the initial development process.",
     },
     {
       start: 2016,
