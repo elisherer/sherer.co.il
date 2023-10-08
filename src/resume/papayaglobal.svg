@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 40.000001 40"
+   fill="none"
+   version="1.1"
+   id="svg1030"
+   sodipodi:docname="papayaglobal.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1032"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     height="38.99901px"
+     inkscape:zoom="5.9005236"
+     inkscape:cx="19.574534"
+     inkscape:cy="21.608252"
+     inkscape:window-width="1296"
+     inkscape:window-height="969"
+     inkscape:window-x="0"
+     inkscape:window-y="62"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1030" />
+  <path
+     d="m 13.25022,39.676914 c 3.06081,0 5.54212,-2.4993 5.54212,-5.5825 0,-3.0831 -2.48131,-5.5825 -5.54212,-5.5825 -3.06081,0 -5.5420911,2.4994 -5.5420911,5.5825 0,3.0832 2.4812811,5.5825 5.5420911,5.5825 z"
+     fill="#ff3924"
+     id="path993" />
+  <path
+     d="m 25.56424,31.231114 c 1.8416,-2.4626 -0.6984,-7.519 -5.6733,-11.2939 -4.97491,-3.7748 -10.5008002,-4.8385 -12.3424111,-2.3759 -1.8416191,2.4626 0.6984209,7.519 5.6733311,11.2939 4.97488,3.7748 10.50078,4.8385 12.34238,2.3759 z"
+     fill="#ff3924"
+     id="path995" />
+  <path
+     d="m 33.73744,29.802414 c 2.7184,-1.9216 0.4452,-9.9053 -5.0773,-17.8321 C 23.13764,4.0435639 16.45708,-0.82457606 13.73866,1.0970329 c -2.71842,1.921611 -0.44526,9.9052811 5.07728,17.8320811 5.5225,7.9268 12.2031,12.7949 14.9215,10.8733 z"
+     fill="#ff3924"
+     id="path997" />
+  <defs
+     id="defs1028">
+    <clipPath
+       id="clip0_6291_9808">
+      <rect
+         width="191"
+         height="39"
+         fill="#ffffff"
+         id="rect1025"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+</svg>
